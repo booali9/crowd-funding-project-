@@ -1,36 +1,42 @@
-# Node modules and lock file
+# Dependency directories
 node_modules/
-package-lock.json
+jspm_packages/
 
-# Environment variables
-.env
-
-# Logs
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# OS files
+# Environment variables
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build directories
+build/
+dist/
+out/
+.next/
+
+# IDE specific files
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# System Files
 .DS_Store
 Thumbs.db
 
-# Hardhat build files
-/cache
-/artifacts
+# Secret files
+*.pem
+*.key
+*.cert
 
-# TypeChain generated files
-/typechain
-/typechain-types
-
-# Solidity coverage
-/coverage
-/coverage.json
-
-# Hardhat Ignition deployment files
-ignition/deployments/chain-31337
-
-# Optional: VSCode settings (if you don’t want to push them)
-/.vscode
-
-# Optional: Compiled contracts (if you export them somewhere else)
-/build
+# Custom prohibited files (add your specific files here)
+config.json
+secrets/
+*.priv
+config.bat
